@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/VitorGeovani/EliteWheels/main/frontend/src/assets/logo.png" alt="EliteWheels Logo" width="200"/>
+    <img src="frontend/src/assets/logo.png" alt="EliteWheels Logo" width="100"/>
 </div>
 
 # EliteWheels - Sistema de Locadora de Veículos
