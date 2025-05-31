@@ -1,0 +1,24 @@
+{
+  "short_name": "EliteWheels",
+  "name": "EliteWheels - Sistema de Locadora",
+  "description": "Sistema completo para gestão de locadora de veículos",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7A14C0",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR"
+}

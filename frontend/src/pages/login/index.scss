@@ -1,0 +1,153 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FF7101 0%, #7A14C0 100%);
+    padding: 20px;
+
+    .login-box {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        width: 100%;
+        max-width: 400px;
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                color: #333;
+                margin: 0;
+                font-size: 1.8rem;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+
+                span {
+                    color: #FF7101;
+                }
+            }
+
+            h2 {
+                font-family: 'Inter', sans-serif;
+                color: #666;
+                margin: 5px 0 0 0;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        .login-form {
+            h3 {
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                color: #333;
+                margin-bottom: 25px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            .erro {
+                font-family: 'Inter', sans-serif;
+                background: #ffe6e6;
+                color: #d00;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 0.875rem;
+                font-weight: 500;
+            }
+
+            .input-group {
+                margin-bottom: 20px;
+
+                label {
+                    font-family: 'Inter', sans-serif;
+                    display: block;
+                    margin-bottom: 5px;
+                    color: #333;
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    letter-spacing: 0.3px;
+                }
+
+                input {
+                    font-family: 'Inter', sans-serif;
+                    width: 100%;
+                    padding: 12px;
+                    border: 2px solid #ddd;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    transition: border-color 0.3s;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #FF7101;
+                    }
+
+                    &::placeholder {
+                        color: #999;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .login-btn {
+                font-family: 'Inter', sans-serif;
+                width: 100%;
+                background: #7A14C0;
+                color: white;
+                border: none;
+                padding: 15px;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                transition: background 0.3s;
+                text-transform: uppercase;
+
+                &:hover:not(:disabled) {
+                    background: #6b10a7;
+                }
+
+                &:disabled {
+                    background: #ccc;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        .login-info {
+            font-family: 'Inter', sans-serif;
+            margin-top: 30px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            text-align: center;
+
+            p {
+                margin: 5px 0;
+                font-size: 0.8rem;
+                color: #666;
+                line-height: 1.4;
+
+                &:first-child {
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

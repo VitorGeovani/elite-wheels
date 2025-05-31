@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7A14C0" />
+    <meta
+      name="description"
+      content="EliteWheels - Sistema de Locadora de Veículos. Gerencie clientes, veículos e locações de forma simples e eficiente."
+    />
+    <meta name="keywords" content="locadora, veículos, carros, aluguel, gestão, sistema" />
+    <meta name="author" content="EliteWheels Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elitewheels.com/" />
+    <meta property="og:title" content="EliteWheels - Sistema de Locadora" />
+    <meta property="og:description" content="Sistema completo para gestão de locadora de veículos" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://elitewheels.com/" />
+    <meta property="twitter:title" content="EliteWheels - Sistema de Locadora" />
+    <meta property="twitter:description" content="Sistema completo para gestão de locadora de veículos" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/logo.png" />
+
+    <!-- Ícones para diferentes dispositivos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Para Windows -->
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/logo.png" />
+    <meta name="msapplication-TileColor" content="#7A14C0" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    
+    <!-- Google Fonts - Fontes modernas similares à imagem -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>EliteWheels - Sistema de Locadora de Veículos</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background: linear-gradient(135deg, #FF7101 0%, #7A14C0 100%);
+        color: white;
+        font-family: 'Inter', Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1>JavaScript Necessário</h1>
+          <p>Você precisa habilitar o JavaScript no seu navegador para usar o EliteWheels.</p>
+          <p>Este é um sistema moderno que requer JavaScript para funcionar corretamente.</p>
+        </div>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    
+    <!-- Fallback para browsers antigos -->
+    <script>
+      // Verificar se o browser suporta ES6
+      try {
+        eval("const x = () => {}");
+      } catch (e) {
+        document.getElementById('root').innerHTML = `
+          <div style="
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background: linear-gradient(135deg, #FF7101 0%, #7A14C0 100%);
+            color: white;
+            font-family: 'Inter', Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+          ">
+            <div>
+              <h1>Navegador Não Suportado</h1>
+              <p>Por favor, atualize seu navegador para uma versão mais recente.</p>
+              <p>Recomendamos: Chrome, Firefox, Safari ou Edge atualizados.</p>
+            </div>
+          </div>
+        `;
+      }
+    </script>
+  </body>
+</html>

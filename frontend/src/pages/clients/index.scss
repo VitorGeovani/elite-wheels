@@ -1,0 +1,121 @@
+.MainApp {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+
+  .inputs_Tables {
+    width: 100%;
+
+    .content {
+      padding: 35px;
+
+      .Title h4 {
+        margin-bottom: 10px;
+        color: #F47A08;
+      }
+
+      .newClient, .ClientsList {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 8px 0px #7A7A7A40;
+        background-color: #fff;
+        padding: 25px;
+
+        h1 {
+          margin-bottom: 0;
+        }
+
+        span {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #C7C7C7;
+          width: 250px;
+          margin: 5px;
+          font-size: 10px;
+          padding: 7px 7px 8px;
+          font-weight: 700;
+
+          input {
+            border: none;
+            outline: none;
+          }
+        }
+
+        .btnSpan {
+          border: none;
+          display: flex;
+          flex-direction: row;
+
+          button {
+            background: #7A14C0;
+            width: 100px;
+            border: none;
+            padding: 13px;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 3px;
+
+            &:hover {
+              background: #6b10a7;
+            }
+          }
+        }
+
+        table {
+          border-collapse: separate;
+          border-spacing: 0px 10px;
+          font-size: 18px;
+        }
+
+        i {
+          font-size: 19px;
+          margin-left: 15px;
+          cursor: pointer;
+          transition: color 100ms ease-in-out, transform 100ms ease-in-out;
+
+          &:hover {
+            color: red;
+            transform: scale(1.1);
+          }
+        }
+
+        th {
+          color: #A8A8A8;
+          margin-bottom: -10px;
+        }
+
+        td {
+          color: #3C4261;
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        tr:hover i {
+          display: flex;
+          flex-direction: row;
+        }
+
+        td, th {
+          text-align: left;
+          padding: 15px;
+        }
+
+        td {
+          border-top: 1.32px solid #D4D4D4;
+          border-bottom: 1.32px solid #D4D4D4;
+         
+        }
+
+        tbody tr td:first-child {
+          border-left: 1.32px solid #D4D4D4;
+        }
+
+        tbody tr td:last-child {
+          border-right: 1.32px solid #D4D4D4;
+        }
+      }
+    }
+  }
+}

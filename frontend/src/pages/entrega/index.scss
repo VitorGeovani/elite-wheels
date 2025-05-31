@@ -1,0 +1,143 @@
+.MainLocation {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f6fa;
+
+    .LocationInsert {
+        flex: 1;
+        padding: 30px;
+
+        .content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.Title {
+    margin-bottom: 32px;
+
+    h4 {
+        color: #ff6600;
+        margin: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 8px 0 0;
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+.entrega-container {
+    .info-locacao {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 32px;
+
+        .info-item {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 15px;
+
+            span {
+                color: #7a14c0;
+                font-weight: 600;
+                margin-right: 8px;
+                min-width: 120px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .finalizar-locacao {
+        max-width: 600px;
+
+        h2 {
+            color: #7a14c0;
+            font-size: 20px;
+            margin: 0 0 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+
+                &:focus {
+                    outline: none;
+                    border-color: #7a14c0;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+
+        .total {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 24px 0;
+
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                margin: 0;
+                color: #7a14c0;
+                font-size: 24px;
+            }
+        }
+
+        button {
+            background: #7a14c0;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 16px;
+            font-size: 16px;
+
+            &:hover {
+                background: #6010a0;
+            }
+        }
+
+        .erro {
+            color: #dc3545;
+            padding: 8px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+    }
+}

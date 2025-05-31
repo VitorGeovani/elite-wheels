@@ -1,0 +1,139 @@
+.CarsMain {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+
+    .CarContent {
+        width: 100%;
+
+        main {
+            padding: 35px;
+
+            .Title {
+                h4 {
+                    margin-bottom: 10px;
+                    color: #F47A08;
+                }
+            }
+
+            .newCar,
+            .CarsList {
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 0px 8px 0px #7A7A7A40;
+                background-color: #fff;
+                padding: 25px;
+                margin-bottom: 50px;
+                cursor: text;
+                
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid #C7C7C7;
+                    width: 250px;
+                    margin: 5px;
+                    font-size: 13px;
+                    padding: 7px 7px 8px;
+                    font-weight: 700;
+
+                    select {
+                        border: none;
+                        outline: none;
+                        font-size: 22px;
+                    }
+
+                    div {
+                        display: flex;
+
+                        i {
+                            color: #3C4261;
+                        }
+                    }
+
+                    input {
+                        border: none;
+                        background: 'transparent';
+                        outline: none;
+                        width: 100%;
+                        font-size: 22px;
+                    }
+
+                }
+
+                .btnSpan {
+                    border: none;
+
+                    button {
+                        background: #7A14C0;
+                        width: 100px;
+                        border: none;
+                        padding: 13px;
+                        color: #fff;
+                        font-weight: 600;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        .CarsList {
+
+            table {
+                border-collapse: separate;
+                border-spacing: 0px 10px;
+                font-size: 18px;
+            }
+
+            i {
+                font-size: 19px;
+                margin-left: 15px;
+               
+                cursor: pointer;
+                transition: color 100ms ease-in-out, transform 100ms ease-in-out;
+
+                &:hover {
+                    color: red;
+                    transform: scale(1.1);
+                }
+            }
+
+            th {
+                color: #A8A8A8;
+                margin-bottom: -10px;
+            }
+
+            td {
+                color: #3C4261;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            tr:hover i {
+                display: flex;
+                flex-direction: row;
+            }
+
+            td,
+            th {
+                text-align: left;
+                padding: 15px;
+            }
+
+            td {
+                border-top: 1.32px solid #D4D4D4;
+                border-bottom: 1.32px solid #D4D4D4;
+            }
+
+            tbody tr td:first-child {
+                border-left: 1.32px solid #D4D4D4;
+            }
+
+            tbody tr td:last-child {
+                border-right: 1.32px solid #D4D4D4;
+            }
+        }
+
+    }
+}
